@@ -82,7 +82,21 @@
         <input type="date" id="Dateregistration" name="Dateregistration" style="border:none; border-bottom:1px solid black; width: 500px;"><br>
 
         <label for="Gradelevel">Grade Level:</label>
-       <input type="text" id="Gradelevel" name="Gradelevel" style="border:none; border-bottom:1px solid black; width: 300px">
+       <select id="Gradelevel" name="Gradelevel">
+            <option value="Kinder">Kinder</option>
+            <option value="Grade 1">Grade 1</option>
+            <option value="Grade 2">Grade 2</option>
+            <option value="Grade 3">Grade 3</option>
+            <option value="Grade 4">Grade 4</option>
+            <option value="Grade 5">Grade 5</option>
+            <option value="Grade 6">Grade 6</option>
+            <option value="Grade 7">Grade 7</option>
+            <option value="Grade 8">Grade 8</option>
+            <option value="Grade 9">Grade 9</option>
+            <option value="Grade 10">Grade 10</option>
+            <option value="Grade 11">Grade 11</option>
+            <option value="Grade 12">Grade 12</option>
+        </select>
 
        <label for="Lrn">Learner's Reference Number(LRN)</label>
        <input type="text" id="LRN" name="LRN" style="border:none; border-bottom:1px solid black; width: 300px"><br>
@@ -148,19 +162,19 @@
         <input type="text" id="Emailaddress" name="Emailaddress" style="border:none; border-bottom:1px solid black; width: 280px">
 
         <label>DO YOU HAVE AVAILABLE GUARDIAN FOR REMOTE LEARNING?</label>
-            <input type="checkbox" id="YES" name="GUARDIAN" value="Yes">YES
-            <input type="checkbox" id="NO"  name="GUARDIAN" value="No">NO<br><br>
+            <input type="radio" id="YES" name="GUARDIAN" value="Yes">YES
+            <input type="radio" id="NO"  name="GUARDIAN" value="No">NO<br><br>
 
             <label>Are You A 4Ps Beneficiary?</label>
-                <input type="checkbox" id="YES" name="FPs" value="Yes">YES
-                <input type="checkbox" id="NO"  name="FPs" value="No">NO
+                <input type="radio" id="YES" name="FPs" value="Yes">YES
+                <input type="radio" id="NO"  name="FPs" value="No">NO
 
             <label> If Yes,Write The 4Ps Household ID Number</label>
             <input type="text" id="Fnumber" name="Fnumber"  style="border:none; border-bottom:1px solid black; width: 300px"><br>
 
             <label>Enrolled In Madrasah?<strong> (For Muslim ONLY)</strong></label>
-                <input type="checkbox" id="YES" name="MUSLIMONLY" value="Yes">YES
-                <input type="checkbox" id="NO" name="MUSLIMONLY" value="No">NO<br><br>
+                <input type="radio" id="YES" name="MUSLIMONLY" value="Yes">YES
+                <input type="radio" id="NO" name="MUSLIMONLY" value="No">NO<br><br>
             
 <hr>
 <h2 style="background-color: lightgray; font-size: 20px;text-align:center;">LAST SCHOOL ATTENDED <span style="color:red;font-size:14px">(For New Students only) </span></h2>
