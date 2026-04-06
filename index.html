@@ -104,7 +104,7 @@
        <input type="text" id="LRN" name="LRN" style="border:none; border-bottom:1px solid black; width: 300px"><br>
 
 
-        <h3>Name</h3>
+        <h3>Learner's Name</h3>
 
         <label for="Fname">Family Name:</label>
         <input type="text" id="Fname" name="Fname" style="border:none; border-bottom:1px solid black; width: 200px">
@@ -121,12 +121,11 @@
         <label for="Bplace">Birth Place:</label>
         <input type="text" id="Bplace" name="Bplace" style="border:none; border-bottom:1px solid black; width: 200px">
 
-       <p>Sex:
+       <label>Sex:</label>
             <input type="radio" id="SEXM" name="Sex" value="Male"> 
              <label for="Male">Male</label>
             <input type="radio" id="SEXF" name="Sex" value="Female">
              <label for="Female">Female</label>
-       </p>
 
         <h3>Home Address</h3>
 
@@ -183,14 +182,14 @@
             
 <hr>
 <h2 style="background-color: lightgray; font-size: 20px;text-align:center;">LAST SCHOOL ATTENDED <span style="color:red;font-size:14px">(For New Students only) </span></h2>
-<label>NAME OF SCHOOL</label>
+<label>Name of School:</label>
 <input type="text" id="nameofSchool" name="NameofSchool" style="border:none; border-bottom:1px solid black; width: 300px">
-<label>School ID</label>
+<label>School ID:</label>
 <input type="text" id="schoolID" name="SchoolID" style="border:none; border-bottom:1px solid black; width: 300px"><br>
-<label>School Address</label>
+<label>School Address:</label>
 <input type="text" id="schooladdress" name="Schooladdress" style="border:none; border-bottom:1px solid black; width: 300px">
-<label>Contact No.</label>
-<input type="text" id="contactno" name="Contactno" style="border:none; border-bottom:1px solid black; width: 300px" placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9{3}-[0-9]{4}"required><br><br>
+<label>Contact Number:</label>
+<input type="text" id="contactno" name="Contactno" style="border:none; border-bottom:1px solid black; width: 300px" placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9{3}-[0-9]{4}"><br><br>
 
 
 
@@ -276,34 +275,79 @@
 
 <h2 style="background-color: lightgray; font-size: 20px;text-align:center;">PARENTS INFORMATION</h2>
 
- <h3>Father's Name</h3>
-<label for="fname">First Name:</label>
-<input type="text"  name=Fname style="border:none; border-bottom:1px solid black; width: 300px;"><br>
-<label for="mname">Middle Name:</label>
-<input type="text" name=Mname style="border:none; border-bottom:1px solid black; width: 300px;"><br>
-<label for="lname">Family Name:</label>
-<input type="text"  name=Lname style="border: none; border-bottom:1px solid black; width: 300px;"><br>
-<label for="job">Occupation:</label>
-<input type="text" name=Job style="border:none; border-bottom: 1px solid black; width: 300px;"><br>
-<label for="number">Contact Number:</label>
-<input type="tel" name=Number placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9{3}-[0-9]{4}"required style="border:none; border-bottom: 1px solid black; width: 300px;"><br>
-<label for="fb acct">Facebook Account:</label>
-<input type="text" name=Fbacc style="border:none; border-bottom: 1px solid black; width: 300px;">
+ <table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: none;">
+<tr> 
+<th>Father's Name</th>
+<th>Mother's Maiden Name</th>
+</tr>
 
-<h3>Mother's Maiden Name</h3>
-<br>
-<label for="fname">First Name:</label>
-<input type="text" name=Fname style="border:none; border-bottom:1px solid black; width: 300px;"><br>
-<label for="mname">Middle Name:</label>
-<input type="text" name=Mname style="border:none; border-bottom:1px solid black; width: 300px;"><br>
-<label for="lname">Family Name:</label>
-<input type="text" name=Lname style="border: none; border-bottom:1px solid black; width: 300px;"><br>
-<label for="job">Occupation:</label>
-<input type="text" name=Job style="border:none; border-bottom: 1px solid black; width: 300px;"><br>
-<label for="number">Contact Number:</label>
-<input type="tel" name=Number placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9{3}-[0-9]{4}"required style="border:none; border-bottom: 1px solid black; width: 300px;"><br>
-<label for="fb acct">Facebook Account:</label>
-<input type="text" name=Fbacc style="border:none; border-bottom: 1px solid black; width: 300px;"><br>
+<tr>
+<td>
+<label for="ffname">First Name:</label>
+<input type="text"  name=ffname style="border:none; border-bottom:1px solid black; width: 300px;"><br>
+</td>
+<td>
+<label for="mfname">First Name:</label>
+<input type="text" name=mfname style="border:none; border-bottom:1px solid black; width: 300px;"><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="fmname">Middle Name:</label>
+<input type="text" name=fmname style="border:none; border-bottom:1px solid black; width: 300px;"><br>
+</td>
+<td>
+<label for="mmname">Middle Name:</label>
+<input type="text" name=mmname style="border:none; border-bottom:1px solid black; width: 300px;"><br>  
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="flname">Family Name:</label>
+<input type="text"  name=flname style="border: none; border-bottom:1px solid black; width: 300px;"><br>
+</td>
+<td>
+<label for="mlname">Family Name:</label>
+<input type="text" name=mlname style="border: none; border-bottom:1px solid black; width: 300px;"><br> 
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="fjob">Occupation:</label>
+<input type="text" name=fjob style="border:none; border-bottom: 1px solid black; width: 300px;"><br>
+</td>
+<td>
+<label for="mjob">Occupation:</label>
+<input type="text" name=mjob style="border:none; border-bottom: 1px solid black; width: 300px;"><br>
+</td> 
+</tr>
+
+<tr>
+<td></td>
+<label for="fnumber">Contact Number:</label>
+<input type="tel" name=fnumber placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9{3}-[0-9]{4}"required style="border:none; border-bottom: 1px solid black; width: 300px;"><br>
+</td>
+<td>
+<label for="mnumber">Contact Number:</label>
+<input type="tel" name=mnumber placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9{3}-[0-9]{4}"required style="border:none; border-bottom: 1px solid black; width: 300px;"><br>    
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="fFbacc">Facebook Account:</label>
+<input type="text" name=Fbacc style="border:none; border-bottom: 1px solid black; width: 300px;">
+</td>
+<td>
+<label for="mFbacc">Facebook Account:</label>
+<input type="text" name=mFbacc style="border:none; border-bottom: 1px solid black; width: 300px;"><br>    
+</td>
+</tr>
+ </table>
+
 <hr>
  <h2 style="background-color: lightgray; font-size: 20px;text-align:center;">CONTACT PERSON OTHER THAN THE PARENTS IN CASE OF EMEGENCY</h2>
  <h3> Name</h3>
